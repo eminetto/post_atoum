@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Language" content="en" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Your project name : code coverage of Service\Auth</title>
+		<link rel="stylesheet" media="screen" type="text/css" href="../screen.css" title="Screen" />
+	</head>
+	<body>
+		<div id="header">
+			<h1>Code coverage of <a href="../">Your project name</a>: Service\Auth</h1>
+			<h2>Class code coverage <span>100%</span></h2>
+		</div>
+		<div id="page">
+			<div id="content">
+				<h3>Methods</h3>
+				<ul class="summary">
+					
+						
+							<li>
+								
+								
+									<div class="bar">
+										<div class="background"></div>
+										<div class="graph" style="width: 100%"></div>
+										<div class="label"><a href="#__construct">__construct</a> <span>100%</span></div>
+									</div>
+								
+							</li>
+						
+							<li>
+								
+								
+									<div class="bar">
+										<div class="background"></div>
+										<div class="graph" style="width: 100%"></div>
+										<div class="label"><a href="#authenticate">authenticate</a> <span>100%</span></div>
+									</div>
+								
+							</li>
+						
+					
+				</ul>
+				<h3>Source</h3>
+				<table cellpadding="0" cellspacing="0" class="source">
+					<tr><th class="number">Line</th><th>Code</th></tr>
+					<tr><td class="number">1</td><td><pre>&lt;?php
+</pre></td></tr><tr><td class="number">2</td><td><pre>namespace Service;
+</pre></td></tr><tr><td class="number">3</td><td><pre>
+</pre></td></tr><tr><td class="number">4</td><td><pre>class Auth
+</pre></td></tr><tr><td class="number">5</td><td><pre>{
+</pre></td></tr><tr><td class="number">6</td><td><pre>
+</pre></td></tr><tr><td class="number">7</td><td><pre>	const INVALID_USER = 1; 
+</pre></td></tr><tr><td class="number">8</td><td><pre>	const INVALID_PASSWORD = 2; 
+</pre></td></tr><tr><td class="number">9</td><td><pre>	const VALID_AUTH = 3; 
+</pre></td></tr><tr><td class="number">10</td><td><pre>
+</pre></td></tr><tr><td class="number">11</td><td><pre>	private $pdo;
+</pre></td></tr><tr><td class="number">12</td><td><pre>
+</pre></td></tr><tr><td class="number"><a name="__construct"></a>13</td><td><pre>	public function __construct(\PDO $pdo) 
+</pre></td></tr><tr><td class="number"><a name="__construct"></a>14</td><td><pre>	{
+</pre></td></tr><tr class="covered"><td class="number">15</td><td><pre>		$this-&gt;pdo = $pdo;
+</pre></td></tr><tr class="covered"><td class="number">16</td><td><pre>	}
+</pre></td></tr><tr><td class="number"><a name="__construct"></a>17</td><td><pre>
+</pre></td></tr><tr><td class="number"><a name="authenticate"></a>18</td><td><pre>	public function authenticate($login, $password)
+</pre></td></tr><tr><td class="number"><a name="authenticate"></a>19</td><td><pre>	{
+</pre></td></tr><tr><td class="number"><a name="authenticate"></a>20</td><td><pre>		//todo: filter parameters!
+</pre></td></tr><tr class="covered"><td class="number">21</td><td><pre>    	$sth = $this-&gt;pdo-&gt;prepare(&#039;select * from user where login = ?&#039;);
+</pre></td></tr><tr class="covered"><td class="number">22</td><td><pre>		$sth-&gt;bindParam(1, $login, \PDO::PARAM_STR);
+</pre></td></tr><tr class="covered"><td class="number">23</td><td><pre>		$sth-&gt;execute();
+</pre></td></tr><tr class="covered"><td class="number">24</td><td><pre>		$result = $sth-&gt;fetch(\PDO::FETCH_ASSOC);
+</pre></td></tr><tr class="covered"><td class="number">25</td><td><pre>		if (! $result) {
+</pre></td></tr><tr class="covered"><td class="number">26</td><td><pre>			return $this::INVALID_USER;
+</pre></td></tr><tr><td class="number"><a name="authenticate"></a>27</td><td><pre>		}
+</pre></td></tr><tr class="covered"><td class="number">28</td><td><pre>		if ($password != $result[&#039;password&#039;]) {
+</pre></td></tr><tr class="covered"><td class="number">29</td><td><pre>			return $this::INVALID_PASSWORD;
+</pre></td></tr><tr><td class="number"><a name="authenticate"></a>30</td><td><pre>		}
+</pre></td></tr><tr><td class="number"><a name="authenticate"></a>31</td><td><pre>	
+</pre></td></tr><tr class="covered"><td class="number">32</td><td><pre>		return $this::VALID_AUTH;
+</pre></td></tr><tr><td class="number"><a name="authenticate"></a>33</td><td><pre>	}
+</pre></td></tr><tr><td class="number"><a name="authenticate"></a>34</td><td><pre>}</pre></td></tr>
+				</table>
+			</div>
+		</div>
+		<div id="footer">
+			<p>Code coverage report powered by <a href="http://atoum.org">atoum</a></p>
+		</div>
+	</body>
+</html>

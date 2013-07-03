@@ -1,0 +1,5 @@
+AuthPHPUnit
+ [x] Invalid user
+ [x] Invalid password
+ [x] Valid auth
+

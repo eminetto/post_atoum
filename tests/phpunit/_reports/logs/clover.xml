@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1372868901">
+  <project timestamp="1372868901">
+    <package name="Service">
+      <file name="/Users/eminetto/Documents/Projects/vagrant/post_atoum/src/Service/Auth.php">
+        <class name="Auth" namespace="Service">
+          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="13" coveredelements="13"/>
+        </class>
+        <line num="13" type="method" name="__construct" crap="1" count="3"/>
+        <line num="15" type="stmt" count="3"/>
+        <line num="16" type="stmt" count="3"/>
+        <line num="18" type="method" name="authenticate" crap="3" count="3"/>
+        <line num="21" type="stmt" count="3"/>
+        <line num="22" type="stmt" count="3"/>
+        <line num="23" type="stmt" count="3"/>
+        <line num="24" type="stmt" count="3"/>
+        <line num="25" type="stmt" count="3"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="28" type="stmt" count="2"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="32" type="stmt" count="1"/>
+        <metrics loc="33" ncloc="31" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="13" coveredelements="13"/>
+      </file>
+    </package>
+    <metrics files="1" loc="33" ncloc="31" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="13" coveredelements="13"/>
+  </project>
+</coverage>
