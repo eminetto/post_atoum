@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="AuthPHPUnitTest" file="/Users/eminetto/Documents/Projects/vagrant/post_atoum/tests/phpunit/Service/AuthPHPUnitTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.020592">
-    <testcase name="testInvalidUser" class="AuthPHPUnitTest" file="/Users/eminetto/Documents/Projects/vagrant/post_atoum/tests/phpunit/Service/AuthPHPUnitTest.php" line="27" assertions="1" time="0.011400"/>
-    <testcase name="testInvalidPassword" class="AuthPHPUnitTest" file="/Users/eminetto/Documents/Projects/vagrant/post_atoum/tests/phpunit/Service/AuthPHPUnitTest.php" line="35" assertions="1" time="0.003318"/>
-    <testcase name="testValidAuth" class="AuthPHPUnitTest" file="/Users/eminetto/Documents/Projects/vagrant/post_atoum/tests/phpunit/Service/AuthPHPUnitTest.php" line="43" assertions="1" time="0.005874"/>
+  <testsuite name="Test Suite" tests="3" assertions="3" failures="0" errors="0" time="0.017836">
+    <testsuite name="AuthPHPUnitTest" file="/Users/eminetto/Documents/Projects/vagrant/post_atoum/tests/phpunit/Service/AuthPHPUnitTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.017836">
+      <testcase name="testInvalidUser" class="AuthPHPUnitTest" file="/Users/eminetto/Documents/Projects/vagrant/post_atoum/tests/phpunit/Service/AuthPHPUnitTest.php" line="27" assertions="1" time="0.010663"/>
+      <testcase name="testInvalidPassword" class="AuthPHPUnitTest" file="/Users/eminetto/Documents/Projects/vagrant/post_atoum/tests/phpunit/Service/AuthPHPUnitTest.php" line="35" assertions="1" time="0.003895"/>
+      <testcase name="testValidAuth" class="AuthPHPUnitTest" file="/Users/eminetto/Documents/Projects/vagrant/post_atoum/tests/phpunit/Service/AuthPHPUnitTest.php" line="43" assertions="1" time="0.003278"/>
+    </testsuite>
   </testsuite>
 </testsuites>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1372868901">
-  <project timestamp="1372868901">
+<coverage generated="1372870478">
+  <project timestamp="1372870478">
     <package name="Service">
       <file name="/Users/eminetto/Documents/Projects/vagrant/post_atoum/src/Service/Auth.php">
         <class name="Auth" namespace="Service">
